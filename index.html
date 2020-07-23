@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mi Videojuego</title>
+        
+    </head>
+    <body>
+        <!--Lienzo de Dibujo-->
+        <canvas id="miCanvas" width="640" height="480"></canvas>
+    </body>
+    <script type="application/javascript">
+        //El codigo de juego a continuacion
+        var canvas = document.getElementById('miCanvas'),
+            contexto = canvas.getContext('2d')
+
+        contexto.fillStyle = "blue";
+        contexto.fillRect(90,100,7,30);
+        contexto.fillRect(100,100,50,30);
+        contexto.arc(150,115,15,1.5 * Math.PI,0.5 * Math.PI,false);
+        contexto.fill();
+    </script>
+</html>
