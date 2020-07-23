@@ -16,7 +16,22 @@
         contexto.fillStyle = "blue";
         contexto.fillRect(90,100,7,30);
         contexto.fillRect(100,100,50,30);
+        //Iniciamos el dibujo de un contorno
+        contexto.beginPath()
         contexto.arc(150,115,15,1.5 * Math.PI,0.5 * Math.PI,false);
+        //Cerramos el contorno
+        contexto.closePath();
         contexto.fill();
+
+        //Dibujamos la segunda bala
+        contexto.strokeStyle = "rgb(20,71,108)";
+        contexto.strokeRect(190,100,7,30);
+        contexto.strokeRect(200,100,50,30);
+        contexto.beginPath()
+        contexto.arc(250,115,15,1.5 * Math.PI,0.5 * Math.PI,false);
+        contexto.closePath();
+        //Aplicamos Contorno
+        contexto.stroke();
+
     </script>
 </html>
